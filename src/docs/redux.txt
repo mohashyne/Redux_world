@@ -1,0 +1,20 @@
+The three building blocks in redux are:
+
+1. Action ( Events ) : functions that return actions.
+2. Store
+3. Reducer ( Event Handlers ) : reducers are pure functions.
+
+
+       Dispatch
+Action --------> Store --------> Reducer
+                 |                  |
+                 <------------------|
+
+We don't call the reducer directly, we just work with the store,
+the store is in charge of calling the reducer,
+the reducer completes thee new state and returns it,
+the store will set the state internally,
+and then notify the UI component about the update,
+the UI component will pullout the update data and re-render itself.
+
+Redux show how actions are Dispatch and how the state has changed.

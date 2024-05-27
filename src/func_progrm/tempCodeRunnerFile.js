@@ -1,0 +1,1 @@
+  draftBook.isPublished = true;
