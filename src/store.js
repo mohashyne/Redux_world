@@ -1,11 +1,6 @@
+import { createStore } from "redux"}
 import reducer from "./reducer"
 
-[
-    {
-        id: 1,
-        description: "",
-        resolved: false
-    },
-    {},
-    {}
-]
+const store = createStore(reducer);
+
+export default store;
