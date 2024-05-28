@@ -20,7 +20,7 @@ the UI component will pullout the update data and re-render itself.
 Redux show how actions are Dispatch and how the state has changed.
 
 
-A book tracker app using redux : on the ui we are going to have textbox for entering information about a book we just discovered , we can add the book to a list , we cann remove a book , we can mark it as resolved , we can change the status to in progress and so on.
+A bug tracker app using redux : on the ui we are going to have textbox for entering information about a bug we just discovered , we can add the bug to a list , we cann remove a bug , we can mark it as resolved , we can change the status to in progress and so on.
  
  steps:
  1. Design the store
@@ -29,9 +29,4 @@ A book tracker app using redux : on the ui we are going to have textbox for ente
  4. setup the store
 
 
- 1. Create a new react app
- 2. Create a new component called BookList
- 3. Create a new component called BookForm
- 4. Create a new component called BookItem
- 5. Create a new component called BookStatus
  
