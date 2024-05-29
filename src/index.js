@@ -1,5 +1,5 @@
 import store from "./store";
-import { bugAdded, bugRemoved } from "./actions"; 
+import { bugAdded, bugRemoved,  bugResolved } from "./actions"; 
 
 // state  = reducer(state, action)
 // notify the subscriber
@@ -9,6 +9,8 @@ const unsubscribe = store.subscribe(() => {
 })
 
 store.dispatch(bugAdded('Bug 1'));
+
+store.dispatch(bugResolved(1));
 
 // unsubscribe();
 
