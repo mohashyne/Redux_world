@@ -40,7 +40,7 @@ export const bugRemoved = () => {
     return {
         type: actions.BUG_REMOVED,
         payload: {
-            id: 1
+            id
         }
     };
 }

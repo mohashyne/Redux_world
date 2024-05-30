@@ -1,20 +1,7 @@
-import store from "./store";
-import { bugAdded, bugRemoved,  bugResolved } from "./actions"; 
+import store from "./customStore";
 
-// state  = reducer(state, action)
-// notify the subscriber
+// store.state = 1;
 
-const unsubscribe = store.subscribe(() => {
-    console.log("Store changed!", store.getState());
-})
+console.log(store.getState()) // undefined
 
-store.dispatch(bugAdded('Bug 1'));
-
-store.dispatch(bugResolved(1));
-
-// unsubscribe();
-
-// store.dispatch(bugRemoved(1));
-
-// console.log(store.getState());
-// console.log(store);
+console.log(store);
